@@ -148,6 +148,8 @@ body {
 }
 
 .contact-item {
+  display: flex;
+  align-items: center;
   margin: 2px 0;
 }
 
