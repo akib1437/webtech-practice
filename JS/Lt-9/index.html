@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akib Tanzim | Internship Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Akib Tanzim</h1>
+
+    <!-- Theme -->
+    <button id="themeToggleBtn">Switch to Dark Mode</button>
+
+    <!-- Time-based greeting -->
+    <p id="greetingText"></p>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#" data-section="aboutSection" class="nav-link active-link">About</a></li>
+        <li><a href="#" data-section="projectsSection" class="nav-link">Projects</a></li>
+        <li><a href="#" data-section="contactSection" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="aboutSection" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student at American International University-Bangladesh (AIUB).
+        I am interested in web development, data science, and cybersecurity. I enjoy learning new
+        technologies and building projects that solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projectsSection" class="content-section hidden">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Chill Gamer:</strong> Game review platform with authentication and review management.</li>
+        <li><strong>Houseease:</strong> Rental management app with payments, contracts, and dashboards.</li>
+        <li><strong>Thyroid Cancer Risk Prediction:</strong> ML model using medical data for early risk detection.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contactSection" class="content-section hidden">
+      <h2>Contact Me</h2>
+      <p>If you would like to get in touch, please fill out the form below:</p>
+
+      <form id="contactForm" onsubmit="return validateContactForm()">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="nameInput">Name:</label><br>
+          <input type="text" id="nameInput" name="name">
+          <div class="error" id="nameERR"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="emailInput">Email:</label><br>
+          <input type="text" id="emailInput" name="email">
+          <div class="error" id="emailERR"></div>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="messageInput">Message:</label><br>
+          <textarea id="messageInput" name="message" rows="5"></textarea>
+          <div class="error" id="messageERR"></div>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p id="formSuccess"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Akib Tanzim. All rights reserved.</p>
+  </footer>
+</body>
+</html>
