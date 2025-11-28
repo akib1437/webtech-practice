@@ -1,0 +1,59 @@
+body {
+  margin: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 4px 6px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.error {
+  color: red;
+  margin-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.delete-btn {
+  padding: 4px 8px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
